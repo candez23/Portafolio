@@ -342,7 +342,7 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex; /* Por defecto, el menú es horizontal */
     justify-content: space-around;
     margin: 0;
     padding: 0;
@@ -355,7 +355,7 @@ nav ul li a {
 }
 
 .menu-toggle {
-    display: none;
+    display: none; /* Ocultar el botón hamburguesa en pantallas grandes */
     color: white;
     font-size: 24px;
     cursor: pointer;
@@ -364,11 +364,11 @@ nav ul li a {
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: block; /* Mostrar el botón hamburguesa en pantallas pequeñas */
     }
 
     nav ul {
-        display: none;
+        display: none; /* Ocultar el menú horizontal */
         flex-direction: column;
         background-color: #333;
         position: absolute;
@@ -378,12 +378,13 @@ nav ul li a {
     }
 
     nav ul.show {
-        display: flex;
+        display: flex; /* Mostrar el menú cuando se activa la clase `show` */
     }
 
     nav ul li {
-        text-align: center;
+        text-align: center; /* Centrar los enlaces en el menú desplegable */
     }
 }
+
 
 
