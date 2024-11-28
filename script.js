@@ -1,9 +1,14 @@
 // Validación del formulario de contacto
 const formulario = document.getElementById("form-contacto");
-// Botón para abrir/cerrar el menú
+const btnArriba = document.getElementById('btn-arriba');
+// Seleccionar el botón hamburguesa y el menú
 const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("menu");
-const btnArriba = document.getElementById('btn-arriba');
+
+// Agregar evento de clic al botón hamburguesa
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
 
 
 window.addEventListener('scroll', () => {
@@ -18,10 +23,6 @@ btnArriba.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-
-menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("menu-open");
-});
 
 formulario.addEventListener("submit", function (event) {
     event.preventDefault(); // Evita el envío del formulario por defecto
