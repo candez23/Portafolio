@@ -1,0 +1,334 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+header .foto-perfil {
+    width: 200px;
+    height: 260px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Secciones generales */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #444;
+}
+
+/* Sección habilidades */
+#habilidades ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+#habilidades li {
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Sección proyectos */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.proyecto {
+    text-align: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 8px;
+}
+/* Estilos generales de la sección */
+#lenguajes-herramientas {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#lenguajes-herramientas h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #444;
+}
+
+/* Estilo de la cuadrícula */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Estilo de cada habilidad */
+.habilidad {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidad:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de los logos */
+.habilidad img {
+    width: 120px;
+    height: 150px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+/* Títulos de cada habilidad */
+.habilidad h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilos de las barras de progreso */
+.barra-progreso {
+    width: 100%;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.barra-progreso .relleno {
+    height: 100%;
+    background-color: #007BFF;
+    transition: width 0.5s ease-in-out;
+}
+
+
+/* Sección contacto */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Estilo del menú */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Botón de menú para móviles */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ocultar el menú en pantallas pequeñas */
+.menu {
+    display: flex;
+}
+
+/* Media Query: Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.menu-open {
+        display: flex;
+    }
+}
+.btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-arriba:hover {
+    background-color: #0056b3;
+}
+
+
